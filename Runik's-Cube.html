@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title> Rubik's Game In AR </title>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="icon" type="image/png" href="/img/favicon.png">
+        <title>Rubik's Cube Game</title>
+    </head>
+    <body>
+        <!-- <div class="app"> -->
+          <div id="cubeSidenav" class="sidenav">
+            <a id="scramble"> Scramble / Shuffle </a>
+            <a id="solve"> Solve </a>
+            <a id="fold">Fold/unfold</a>
+            <a>speed: <input type="range" id="speed" min="1" max="100" step="1" value="20"></a>
+            <input id="command" type="text" value="">
+            <a id="execute"> Execute </a>
+            <br/>
+            <a id="getposition"> get position </a>
+            <input id="position" type="text" value="">
+            <a id="setposition">set position</a>
+            <lable id="status"></label>
+            <br/>
+            1.0.11 | Shreyas M 
+          </div>
+	<!-- <div> MSD | 07 | THALA FOR A REASON 
+    <img src="img/Dhoni.jpg" width="100" height="75"/> -->
+  </div>
+          <div id="switchsidebar" class="switchsidebar">&#9776;</div>
+          <div id="cube" class="cube"></div>
+            <!-- <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready1</p>
+            </div> -->
+        <!-- </div> -->
+        <script type="text/javascript" src="lib/three.min.js"></script>
+    		<script type="text/javascript" src="lib/controls/OrbitControls.js"></script>
+    		<script type="text/javascript" src="lib/Tween.js"></script>
+    		<script type="text/javascript" src="lib/slice.0.1.0.min.js"></script>
+    		<script type="text/javascript" src="js/common.js"></script>
+    		<script type="text/javascript" src="js/cubestate.js"></script>
+    		<script type="text/javascript" src="js/cubeconfig.js"></script>
+    		<script type="text/javascript" src="js/transformer.js"></script>
+    		<script type="text/javascript" src="js/rubikscube.js"></script>
+    		<script type="text/javascript" src="js/cubeinteractive.js"></script>
+    		<script type="text/javascript" src="js/cubeconsole.js"></script>
+    		<script type="text/javascript" src="js/bottomupsolver.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/cubeinit.js"></script>
+    </body>
+    <!-- <footer> @mshreyas336@gmail.com </footer> -->
+</html>
